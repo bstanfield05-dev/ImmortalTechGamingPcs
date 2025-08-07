@@ -4,135 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NESHA TECH - Elite Prebuilt Gaming PCs</title>
-  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white font-sans">
   <!-- Header -->
-  <header class="flex justify-between items-center p-4 bg-zinc-900 text-white sticky top-0 z-50">
-    <h1 class="text-xl font-bold">NESHA TECH</h1>
-    <nav class="space-x-4">
-      <a href="index.html" class="hover:underline">Home</a>
-      <a href="shop.html" class="hover:underline">Shop</a>
-      <a href="about.html" class="hover:underline">About</a>
-      <a href="support.html" class="hover:underline">Support</a>
+  <header class="sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-zinc-900 shadow-md">
+    <h1 class="text-2xl font-bold tracking-wider">NESHA TECH</h1>
+    <nav class="space-x-6 text-sm">
+      <a href="index.html" class="hover:text-green-500">Home</a>
+      <a href="shop.html" class="hover:text-green-500">Shop</a>
+      <a href="about.html" class="hover:text-green-500">About</a>
+      <a href="support.html" class="hover:text-green-500">Support</a>
     </nav>
   </header>
 
-  <!-- Featured Top Banner -->
-  <section class="bg-black py-12">
-    <h2 class="text-white text-3xl font-bold text-center mb-6">Featured Prebuilts</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto px-4">
-      <div class="bg-zinc-800 p-4 rounded-lg shadow-lg text-center">
-        <img src="images/featured1.jpg.jpg" alt="Featured 1" class="rounded w-full h-40 object-cover mb-3">
-        <h3 class="font-semibold">Blue Chilled Glacier</h3>
-        <p class="text-sm text-gray-300">Chilled RGB machine with airflow optimization.</p>
-      </div>
-      <div class="bg-zinc-800 p-4 rounded-lg shadow-lg text-center">
-        <img src="images/featured2.jpg.png" alt="Featured 2" class="rounded w-full h-40 object-cover mb-3">
-        <h3 class="font-semibold">Red Hot Furnace</h3>
-        <p class="text-sm text-gray-300">Blazing fast 144FPS rig for competitive players.</p>
-      </div>
-      <div class="bg-zinc-800 p-4 rounded-lg shadow-lg text-center">
-        <img src="images/featured3.jpg.png" alt="Featured 3" class="rounded w-full h-40 object-cover mb-3">
-        <h3 class="font-semibold">Dragon Ball Z Themed</h3>
-        <p class="text-sm text-gray-300">Heavy-duty multitasking for gamers & creators.</p>
-      </div>
-      <div class="bg-zinc-800 p-4 rounded-lg shadow-lg text-center">
-        <img src="images/featured4.jpg" alt="Featured 4" class="rounded w-full h-40 object-cover mb-3">
-        <h3 class="font-semibold">Phantom</h3>
-        <p class="text-sm text-gray-300">Sleek & silent, perfect for minimalist gaming setups.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- Hero Banner -->
-  <section class="bg-cover bg-center h-96 flex items-center justify-center" style="background-image: url('images/prebuilt.png');">
-    <div class="text-center bg-black bg-opacity-50 p-6 rounded">
-      <h2 class="text-4xl font-bold mb-2">Build Your Power. Game With NESHA.</h2>
-      <p class="text-lg">Top-tier prebuilt PCs. Elite performance. Delivered fast.</p>
+  <section class="bg-cover bg-center h-[90vh] flex items-center justify-center" style="background-image: url('images/featured1.jpg');">
+    <div class="bg-black bg-opacity-60 p-10 rounded-xl text-center max-w-3xl">
+      <h2 class="text-5xl font-extrabold mb-4 leading-tight">Power Meets Precision</h2>
+      <p class="text-lg text-gray-300">Explore our elite lineup of NESHA TECH prebuilt PCs — engineered for serious gamers and professionals alike.</p>
+      <a href="shop.html" class="mt-6 inline-block bg-green-500 hover:bg-green-600 text-black font-bold py-2 px-6 rounded-full transition">Shop Now</a>
     </div>
   </section>
 
-  <!-- Featured Prebuilts -->
-  <section class="bg-black py-12 px-4">
-    <h2 class="text-white text-3xl font-bold text-center mb-8">Featured Prebuilt Gaming PCs</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <!-- Blaze -->
-      <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
-        <a href="product-blaze.html">
-          <img src="images/blaze.jpg" alt="Blaze PC" class="w-full h-60 object-cover">
-          <div class="p-4 text-white">
-            <h3 class="text-xl font-semibold">Blaze</h3>
-            <p class="text-sm mt-1">High FPS & great value — perfect for mid-tier gamers.</p>
-          </div>
-        </a>
+  <!-- Featured Builds -->
+  <section class="py-20 px-4 bg-black">
+    <h2 class="text-4xl font-bold text-center mb-12">Featured Prebuilt Gaming PCs</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+
+      <!-- Featured PC 1 -->
+      <div class="bg-zinc-900 rounded-lg overflow-hidden shadow-xl hover:scale-105 transition-transform">
+        <img src="images/featured1.jpg" alt="Blue Chilled Glacier" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Blue Chilled Glacier</h3>
+          <p class="text-gray-400 text-sm mt-2">Cold RGB beast with airflow optimization.</p>
+        </div>
       </div>
 
-      <!-- Frost -->
-      <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
-        <a href="product-frost.html">
-          <img src="images/frost.jpg" alt="Frost PC" class="w-full h-60 object-cover">
-          <div class="p-4 text-white">
-            <h3 class="text-xl font-semibold">Frost</h3>
-            <p class="text-sm mt-1">White RGB powerhouse — great thermals & performance.</p>
-          </div>
-        </a>
+      <!-- Featured PC 2 -->
+      <div class="bg-zinc-900 rounded-lg overflow-hidden shadow-xl hover:scale-105 transition-transform">
+        <img src="images/featured2.jpg" alt="Red Hot Furnace" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Red Hot Furnace</h3>
+          <p class="text-gray-400 text-sm mt-2">Blazing fast setup for competitive players.</p>
+        </div>
       </div>
 
-      <!-- Shadow -->
-      <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
-        <a href="product-shadow.html">
-          <img src="images/shadow.jpg" alt="Shadow PC" class="w-full h-60 object-cover">
-          <div class="p-4 text-white">
-            <h3 class="text-xl font-semibold">Shadow</h3>
-            <p class="text-sm mt-1">Stealthy black rig — max performance & airflow.</p>
-          </div>
-        </a>
+      <!-- Featured PC 3 -->
+      <div class="bg-zinc-900 rounded-lg overflow-hidden shadow-xl hover:scale-105 transition-transform">
+        <img src="images/featured3.jpg" alt="Dragon Ball Z Themed" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Dragon Ball Z Thermal</h3>
+          <p class="text-gray-400 text-sm mt-2">Heavy-duty anime desktop for gamers & creators.</p>
+        </div>
       </div>
+
+      <!-- Featured PC 4 -->
+      <div class="bg-zinc-900 rounded-lg overflow-hidden shadow-xl hover:scale-105 transition-transform">
+        <img src="images/featured4.jpg" alt="Phantom" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Phantom</h3>
+          <p class="text-gray-400 text-sm mt-2">Stealth black elite — perfect for minimalist gaming setups.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Why Choose NESHA -->
-  <section class="bg-black py-16">
-    <h2 class="text-white text-3xl font-bold text-center mb-6">Why Choose NESHA?</h2>
-    <p class="text-center text-gray-300 max-w-xl mx-auto mb-10">
-      NESHA TECH offers elite prebuilt systems made with cutting-edge hardware from leading brands like Intel, AMD, and NVIDIA. Built and tested for reliability and shipped fast across the U.S.
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
-      <!-- Free Shipping -->
-      <div class="bg-zinc-800 p-6 rounded-lg text-center">
-        <img src="images/shipping.png" alt="Free Shipping" class="w-8 h-8 mb-2 mx-auto">
-        <h3 class="font-bold">Free Shipping</h3>
-        <p class="text-xs mt-2">Free shipping on all orders across the continental U.S. — no minimum required.</p>
+  <!-- Why NESHA TECH -->
+  <section class="bg-zinc-950 py-20">
+    <h2 class="text-3xl font-bold text-center mb-8">Why Choose NESHA TECH?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+      <div class="bg-zinc-800 rounded-lg p-6 text-center">
+        <img src="images/shipping.png" alt="Free Shipping" class="w-10 h-10 mx-auto mb-3">
+        <h4 class="font-semibold">Free Shipping</h4>
+        <p class="text-gray-400 text-sm mt-1">On all U.S. orders — no minimum.</p>
       </div>
-
-      <!-- Assembled in USA -->
-      <div class="bg-zinc-800 p-6 rounded-lg text-center">
-        <img src="images/usa.png" alt="Assembled in USA" class="w-8 h-8 mb-2 mx-auto">
-        <h3 class="font-bold">Assembled in USA</h3>
-        <p class="text-xs mt-2">Each NESHA TECH system is built and tested in the U.S. to ensure top-tier performance.</p>
+      <div class="bg-zinc-800 rounded-lg p-6 text-center">
+        <img src="images/usa.png" alt="Assembled in USA" class="w-10 h-10 mx-auto mb-3">
+        <h4 class="font-semibold">Assembled in USA</h4>
+        <p class="text-gray-400 text-sm mt-1">Built, tested and shipped from the U.S.</p>
       </div>
-
-      <!-- Tech Support -->
-      <div class="bg-zinc-800 p-6 rounded-lg text-center">
-        <img src="images/support.png" alt="Tech Support" class="w-8 h-8 mb-2 mx-auto">
-        <h3 class="font-bold">Lifetime Tech Support</h3>
-        <p class="text-xs mt-2">Get lifetime support from our expert team for any technical questions or issues.</p>
+      <div class="bg-zinc-800 rounded-lg p-6 text-center">
+        <img src="images/support.png" alt="Tech Support" class="w-10 h-10 mx-auto mb-3">
+        <h4 class="font-semibold">Lifetime Support</h4>
+        <p class="text-gray-400 text-sm mt-1">Our expert team has your back — for life.</p>
       </div>
     </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="bg-gray-900 text-center py-12">
-    <img src="images/prebuilt.png" alt="Prebuilt PCs" class="w-16 h-16 mx-auto mb-4">
-    <h2 class="text-2xl font-bold">Prebuilt Gaming PCs</h2>
-    <p class="text-sm text-gray-300 mt-1">Start your gaming journey with professionally assembled NESHA TECH systems — shipped and ready to play in as little as 2 days.</p>
-    <a href="shop.html" class="mt-4 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">Shop Prebuilts</a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black text-gray-500 text-center py-4">
+  <footer class="bg-black text-center text-gray-500 text-sm py-6">
     &copy; 2025 NESHA TECH. All rights reserved.
   </footer>
 </body>

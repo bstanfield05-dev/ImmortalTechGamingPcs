@@ -7,14 +7,15 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #0d0d0d;
+      background: linear-gradient(to bottom, #0a0a0a, #111);
     }
     .card {
-      background-color: #1a1a1a;
-      transition: transform 0.3s ease;
+      background-color: #1f1f1f;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-6px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     }
     img.icon {
       width: 40px;
@@ -23,11 +24,22 @@
     }
   </style>
 </head>
-<body class="text-white">
+<body class="text-white font-sans">
+  <!-- HEADER -->
+  <header class="bg-black border-b border-zinc-800 shadow-sm py-4 px-6 flex justify-between items-center">
+    <h1 class="text-xl font-bold">NESHA TECH</h1>
+    <nav class="space-x-4">
+      <a href="#" class="text-gray-300 hover:text-white">Home</a>
+      <a href="#shop" class="text-gray-300 hover:text-white">Shop</a>
+      <a href="#about" class="text-gray-300 hover:text-white">About</a>
+      <a href="#support" class="text-gray-300 hover:text-white">Support</a>
+    </nav>
+  </header>
+
   <!-- HERO -->
   <section class="text-center py-32">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Power Meets Precision</h1>
-    <p class="text-gray-400 mb-6">Explore NESHA TECH's elite lineup of prebuilt PCs engineered for serious gamers and professionals.</p>
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Power Meets Precision</h2>
+    <p class="text-gray-400 mb-6 text-lg max-w-2xl mx-auto">Explore NESHA TECH's elite lineup of prebuilt PCs engineered for serious gamers and professionals.</p>
     <a href="#shop" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">Shop Now</a>
   </section>
 
@@ -54,7 +66,7 @@
   </section>
 
   <!-- WHY NESHA -->
-  <section class="py-20 mt-20 bg-zinc-900">
+  <section class="py-20 mt-20 bg-zinc-950">
     <h2 class="text-center text-3xl font-bold mb-10">Why Choose NESHA TECH?</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
       <div class="bg-zinc-800 p-6 rounded-lg text-center">
@@ -75,7 +87,7 @@
     </div>
   </section>
 
-  <footer class="text-center text-gray-500 text-sm py-6">
+  <footer class="text-center text-gray-500 text-sm py-6 border-t border-zinc-800">
     &copy; 2025 NESHA TECH. All rights reserved.
   </footer>
 </body>

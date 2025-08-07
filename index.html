@@ -9,7 +9,7 @@
 </head>
 <body class="bg-black text-white font-sans">
   <!-- Header -->
-  <header class="flex justify-between items-center p-4 bg-zinc-900 text-white">
+  <header class="flex justify-between items-center p-4 bg-zinc-900 text-white sticky top-0 z-50">
     <h1 class="text-xl font-bold">NESHA TECH</h1>
     <nav class="space-x-4">
       <a href="index.html" class="hover:underline">Home</a>
@@ -18,6 +18,33 @@
       <a href="support.html" class="hover:underline">Support</a>
     </nav>
   </header>
+
+  <!-- Featured Top Banner -->
+  <section class="bg-black py-12">
+    <h2 class="text-white text-3xl font-bold text-center mb-6">Featured Prebuilts</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto px-4">
+      <div class="bg-zinc-800 p-4 rounded-lg shadow-lg text-center">
+        <img src="images/featured1.jpg.jpg" alt="Featured 1" class="rounded w-full h-40 object-cover mb-3">
+        <h3 class="font-semibold">Velocity</h3>
+        <p class="text-sm text-gray-300">Blazing fast 144FPS rig for competitive players.</p>
+      </div>
+      <div class="bg-zinc-800 p-4 rounded-lg shadow-lg text-center">
+        <img src="images/featured2.jpg.png" alt="Featured 2" class="rounded w-full h-40 object-cover mb-3">
+        <h3 class="font-semibold">Glacier</h3>
+        <p class="text-sm text-gray-300">Chilled RGB machine with airflow optimization.</p>
+      </div>
+      <div class="bg-zinc-800 p-4 rounded-lg shadow-lg text-center">
+        <img src="images/featured3.jpg.png" alt="Featured 3" class="rounded w-full h-40 object-cover mb-3">
+        <h3 class="font-semibold">Titanium</h3>
+        <p class="text-sm text-gray-300">Heavy-duty multitasking for gamers & creators.</p>
+      </div>
+      <div class="bg-zinc-800 p-4 rounded-lg shadow-lg text-center">
+        <img src="images/featured4.jpg" alt="Featured 4" class="rounded w-full h-40 object-cover mb-3">
+        <h3 class="font-semibold">Phantom</h3>
+        <p class="text-sm text-gray-300">Sleek & silent, perfect for minimalist gaming setups.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Hero Banner -->
   <section class="bg-cover bg-center h-96 flex items-center justify-center" style="background-image: url('images/prebuilt.png');">

@@ -1,102 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NESHA TECH | Elite Prebuilt Gaming PCs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NESHA TECH - Elite Prebuilt Gaming PCs</title>
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-  
-  
 <body class="bg-black text-white font-sans">
+  <!-- Header -->
   <header class="flex justify-between items-center p-4 bg-zinc-900 text-white">
     <h1 class="text-xl font-bold">NESHA TECH</h1>
     <nav class="space-x-4">
-      <a href="#" class="hover:underline">Home</a>
-      <a href="#" class="hover:underline">Shop</a>
-      <a href="#" class="hover:underline">About</a>
-      <a href="#" class="hover:underline">Support</a>
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="shop.html" class="hover:underline">Shop</a>
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="support.html" class="hover:underline">Support</a>
     </nav>
   </header>
 
-  <section class="bg-gradient-to-r from-zinc-900 to-black text-center py-24">
-    <h2 class="text-4xl font-extrabold mb-4">Elite Prebuilt Gaming PCs</h2>
-    <p class="mb-6 text-zinc-300">NESHA TECH delivers high-performance, reliable systems for gamers and creators.</p>
-    <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition">Shop Now</a>
+  <!-- Hero Banner -->
+  <section class="bg-cover bg-center h-96 flex items-center justify-center" style="background-image: url('images/prebuilt.png');">
+    <div class="text-center bg-black bg-opacity-50 p-6 rounded">
+      <h2 class="text-4xl font-bold mb-2">Build Your Power. Game With NESHA.</h2>
+      <p class="text-lg">Top-tier prebuilt PCs. Elite performance. Delivered fast.</p>
+    </div>
   </section>
-<!-- 🔥 Featured Prebuilt Gaming PCs Section -->
-<section class="bg-black py-12 px-4">
-  <h2 class="text-white text-3xl font-bold text-center mb-8">Featured Prebuilt Gaming PCs</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-    <!-- Blaze -->
-    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
-      <a href="product-blaze.html">
-        <img src="images/blaze.jpg" alt="Blaze PC" class="w-full h-60 object-cover">
-        <div class="p-4 text-white">
-          <h3 class="text-xl font-semibold">Blaze</h3>
-          <p class="text-sm mt-1">High FPS & great value — perfect for mid-tier gamers.</p>
-        </div>
-      </a>
-    </div>
-    <!-- Frost -->
-    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
-      <a href="product-frost.html">
-        <img src="images/frost.jpg" alt="Frost PC" class="w-full h-60 object-cover">
-        <div class="p-4 text-white">
-          <h3 class="text-xl font-semibold">Frost</h3>
-          <p class="text-sm mt-1">White RGB powerhouse — great thermals & performance.</p>
-        </div>
-      </a>
-    </div>
-    <!-- Shadow -->
-    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
-      <a href="product-shadow.html">
-        <img src="images/shadow.jpg" alt="Shadow PC" class="w-full h-60 object-cover">
-        <div class="p-4 text-white">
-          <h3 class="text-xl font-semibold">Shadow</h3>
-          <p class="text-sm mt-1">Stealthy black rig — max performance & airflow.</p>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
 
-  <section class="py-20 px-4 text-center">
-    <h3 class="text-3xl font-extrabold mb-6">WHY CHOOSE NESHA?</h3>
-    <p class="max-w-3xl mx-auto text-zinc-400 mb-12">NESHA TECH offers elite prebuilt systems made with cutting-edge hardware from leading brands like Intel, AMD, and NVIDIA. Built and tested for reliability and shipped fast across the U.S.</p>
-    <div class="flex justify-center flex-wrap gap-6">
-      <div class="bg-zinc-800 p-6 rounded-lg w-80">
-        <img src="assets/truck.png" alt="Free Shipping" class="h-12 mx-auto mb-4" />
-        <h4 class="font-bold italic text-white">FREE SHIPPING</h4>
-        <p class="text-sm mt-2 text-zinc-400">Free shipping on all orders across the continental U.S. — no minimum required.</p>
+  <!-- Featured Prebuilts -->
+  <section class="bg-black py-12 px-4">
+    <h2 class="text-white text-3xl font-bold text-center mb-8">Featured Prebuilt Gaming PCs</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <!-- Blaze -->
+      <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+        <a href="product-blaze.html">
+          <img src="images/blaze.jpg" alt="Blaze PC" class="w-full h-60 object-cover">
+          <div class="p-4 text-white">
+            <h3 class="text-xl font-semibold">Blaze</h3>
+            <p class="text-sm mt-1">High FPS & great value — perfect for mid-tier gamers.</p>
+          </div>
+        </a>
       </div>
-      <div class="bg-zinc-800 p-6 rounded-lg w-80">
-        <img src="assets/flag.png" alt="Assembled in USA" class="h-12 mx-auto mb-4" />
-        <h4 class="font-bold italic text-white">ASSEMBLED IN THE USA</h4>
-        <p class="text-sm mt-2 text-zinc-400">Each NESHA TECH system is built and tested in the U.S. to ensure top-tier performance.</p>
+
+      <!-- Frost -->
+      <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+        <a href="product-frost.html">
+          <img src="images/frost.jpg" alt="Frost PC" class="w-full h-60 object-cover">
+          <div class="p-4 text-white">
+            <h3 class="text-xl font-semibold">Frost</h3>
+            <p class="text-sm mt-1">White RGB powerhouse — great thermals & performance.</p>
+          </div>
+        </a>
       </div>
-      <div class="bg-zinc-800 p-6 rounded-lg w-80">
-        <img src="assets/support.png" alt="Tech Support" class="h-12 mx-auto mb-4" />
-        <h4 class="font-bold italic text-white">LIFETIME TECH SUPPORT</h4>
-        <p class="text-sm mt-2 text-zinc-400">Get lifetime support from our expert team for any technical questions or issues.</p>
+
+      <!-- Shadow -->
+      <div class="bg-gray-900 rounded-lg overflow-hidden shadow-md">
+        <a href="product-shadow.html">
+          <img src="images/shadow.jpg" alt="Shadow PC" class="w-full h-60 object-cover">
+          <div class="p-4 text-white">
+            <h3 class="text-xl font-semibold">Shadow</h3>
+            <p class="text-sm mt-1">Stealthy black rig — max performance & airflow.</p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="bg-zinc-900 text-center py-20">
-    <div class="flex flex-col md:flex-row justify-center items-center max-w-6xl mx-auto px-4 gap-10">
-      <img src="assets/pcs.png" alt="Prebuilt PCs" class="w-full md:w-1/2" />
-      <div class="md:w-1/2 text-left">
-        <h3 class="text-3xl font-bold mb-4">PREBUILT GAMING PCS</h3>
-        <p class="text-zinc-300 mb-4">Start your gaming journey with professionally assembled NESHA TECH systems — shipped and ready to play in as little as 2 days.</p>
-        <a href="#" class="border border-green-400 text-green-400 px-6 py-2 rounded-full hover:bg-green-500 hover:text-white transition">SHOP PREBUILTS</a>
+  <!-- Why Choose NESHA -->
+  <section class="bg-black py-16">
+    <h2 class="text-white text-3xl font-bold text-center mb-6">Why Choose NESHA?</h2>
+    <p class="text-center text-gray-300 max-w-xl mx-auto mb-10">
+      NESHA TECH offers elite prebuilt systems made with cutting-edge hardware from leading brands like Intel, AMD, and NVIDIA. Built and tested for reliability and shipped fast across the U.S.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
+      <!-- Free Shipping -->
+      <div class="bg-zinc-800 p-6 rounded-lg text-center">
+        <img src="images/shipping.png" alt="Free Shipping" class="w-8 h-8 mb-2 mx-auto">
+        <h3 class="font-bold">Free Shipping</h3>
+        <p class="text-xs mt-2">Free shipping on all orders across the continental U.S. — no minimum required.</p>
+      </div>
+
+      <!-- Assembled in USA -->
+      <div class="bg-zinc-800 p-6 rounded-lg text-center">
+        <img src="images/usa.png" alt="Assembled in USA" class="w-8 h-8 mb-2 mx-auto">
+        <h3 class="font-bold">Assembled in USA</h3>
+        <p class="text-xs mt-2">Each NESHA TECH system is built and tested in the U.S. to ensure top-tier performance.</p>
+      </div>
+
+      <!-- Tech Support -->
+      <div class="bg-zinc-800 p-6 rounded-lg text-center">
+        <img src="images/support.png" alt="Tech Support" class="w-8 h-8 mb-2 mx-auto">
+        <h3 class="font-bold">Lifetime Tech Support</h3>
+        <p class="text-xs mt-2">Get lifetime support from our expert team for any technical questions or issues.</p>
       </div>
     </div>
   </section>
 
-  <footer class="text-center text-sm text-zinc-500 py-6 bg-black">
-    © 2025 NESHA TECH. All rights reserved.
+  <!-- Call to Action -->
+  <section class="bg-gray-900 text-center py-12">
+    <img src="images/prebuilt.png" alt="Prebuilt PCs" class="w-16 h-16 mx-auto mb-4">
+    <h2 class="text-2xl font-bold">Prebuilt Gaming PCs</h2>
+    <p class="text-sm text-gray-300 mt-1">Start your gaming journey with professionally assembled NESHA TECH systems — shipped and ready to play in as little as 2 days.</p>
+    <a href="shop.html" class="mt-4 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">Shop Prebuilts</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-500 text-center py-4">
+    &copy; 2025 NESHA TECH. All rights reserved.
   </footer>
 </body>
 </html>

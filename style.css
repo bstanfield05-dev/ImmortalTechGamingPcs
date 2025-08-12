@@ -1,5 +1,6 @@
 /*
- * Custom styles for Immortal Gaming PCs
+
+* Custom styles for Immortal Gaming PCs
  *
  * This stylesheet defines a modern dark theme with bold accent colours
  * reminiscent of high‑end gaming brands. It provides a flexible grid
@@ -23,7 +24,7 @@ html, body {
 
 /* Colour palette */
 :root {
-    --bg: #0c0c0c;             /* deep black background */
+    --bg #0c0c0c;             /* deep black background */
     --secondary: #141414;      /* dark grey for cards and panels */
     --primary: #e63946;        /* vibrant red accent */
     --text: #f5f5f5;           /* near white text for contrast */
@@ -723,4 +724,67 @@ footer .attribution {
 .product-detail .btn {
     width: auto;
     padding: 0.75rem 2rem;
+}
+
+/* Updated colour palette and new styles for product cards */
+:root {
+  --bg: #0b0b0d;        /* deep background */
+  --secondary: #1a1a24; /* dark panels */
+  --primary: #6f42c1;   /* purple accent similar to competitor */
+  --price: #e11d48;     /* bold colour for prices and CTAs */
+  --text: #f5f5f5;      /* off-white text */
+  --muted: #999;        /* secondary text */
+  --border: #2b2b3b;    /* subtle borders */
+}
+
+/* Product card redesign */
+.product-card {
+  background-color: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+.product-card img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.product-card .price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--price);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.btn.primary {
+  background-color: var(--primary);
+  color: var(--text);
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn.primary:hover {
+  background-color: #5a36a1;
+}
+.btn.secondary {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.75rem 1rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn.secondary:hover {
+  background-color: var(--primary);
+  color: var(--text);
 }

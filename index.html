@@ -16,7 +16,8 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#deals">Deals</a></li>
                     <li><a href="#products">Products</a></li>
-                    <li><a href="#builder">Build</a></li>
+                    <!-- Updated link to builder page -->
+                    <li><a href="builder.html">Build</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -29,7 +30,8 @@
                 <p class="tagline">Built to Dominate. Engineered for Victory.</p>
                 <div class="hero-actions">
                     <a href="#products" class="btn primary">Shop Prebuilt</a>
-                    <a href="#builder" class="btn secondary">Build Your Own</a>
+                    <!-- Updated hero button to link to builder page -->
+                    <a href="builder.html" class="btn secondary">Build Your Own</a>
                 </div>
             </div>
         </section>
@@ -76,19 +78,10 @@
         </section>
 
         <!-- PC Deals Section -->
-        <!--
-            This section showcases featured PC deals with clickable images,
-            mirroring competitor product tiles. Each card contains an image
-            of a gaming rig, a brief description of the promotion and a price.
-            Users can click anywhere on the card to view more details or
-            proceed to purchase. The IDs and classes align with the new
-            CSS definitions in style.css.
-        -->
         <section id="pc-deals" class="pc-deals">
             <h2>Featured PC Deals</h2>
             <div class="pc-deals-grid">
                 <a href="titan.html" class="pc-deal-card">
-                    <!-- Use the first PC image for the Titan deal -->
                     <img src="img/pc1.jpg" alt="Immortal Titan PC deal" class="pc-deal-image">
                     <div class="pc-deal-content">
                         <h3>Immortal Titan</h3>
@@ -97,7 +90,6 @@
                     </div>
                 </a>
                 <a href="vanguard.html" class="pc-deal-card">
-                    <!-- Use the second PC image for the Vanguard deal -->
                     <img src="img/pc2.jpg" alt="Immortal Vanguard PC deal" class="pc-deal-image">
                     <div class="pc-deal-content">
                         <h3>Immortal Vanguard</h3>
@@ -106,7 +98,6 @@
                     </div>
                 </a>
                 <a href="celestial.html" class="pc-deal-card">
-                    <!-- Use the third PC image for the Celestial deal -->
                     <img src="img/pc3.jpg" alt="Immortal Celestial PC deal" class="pc-deal-image">
                     <div class="pc-deal-content">
                         <h3>Immortal Celestial</h3>
@@ -120,8 +111,18 @@
         <!-- Products Section -->
         <section id="products" class="products">
             <h2>Prebuilt Systems</h2>
+            <!-- Filter controls -->
+            <div class="filter-controls">
+                <label for="filter-select">Filter by resolution:</label>
+                <select id="filter-select" name="filter-select" class="filter-select">
+                    <option value="all">All</option>
+                    <option value="1080p">1080p</option>
+                    <option value="1440p">1440p</option>
+                    <option value="4k">4K</option>
+                </select>
+            </div>
             <div class="product-grid">
-                <div class="product-card">
+                <div class="product-card" data-category="1080p">
                     <img src="img/pc1.jpg" alt="Immortal Fury gaming PC" class="product-image">
                     <h3>Immortal Fury</h3>
                     <p class="description">
@@ -136,7 +137,7 @@
                     <div class="price">$1,299</div>
                     <a href="fury.html" class="btn secondary">Buy Now</a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="1440p">
                     <img src="img/pc3.jpg" alt="Immortal Apex gaming PC" class="product-image">
                     <h3>Immortal Apex</h3>
                     <p class="description">
@@ -151,7 +152,7 @@
                     <div class="price">$1,799</div>
                     <a href="apex.html" class="btn secondary">Buy Now</a>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="4k">
                     <img src="img/pc2.jpg" alt="Immortal Quantum gaming PC" class="product-image">
                     <h3>Immortal Quantum</h3>
                     <p class="description">
@@ -175,7 +176,7 @@
                 <div class="builder-text">
                     <h2>Build Your Dream PC</h2>
                     <p>Create a bespoke gaming machine that matches your play style. Choose your CPU, GPU, memory and storage—and let our experts assemble it to perfection.</p>
-                    <a href="#" class="btn primary">Start Building</a>
+                    <a href="builder.html" class="btn primary">Start Building</a>
                 </div>
                 <div class="builder-icon">
                     <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
@@ -234,7 +235,6 @@
             <div class="review-grid">
                 <div class="review-card">
                     <div class="stars">
-                        <!-- 5 Star icons -->
                         <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
                         <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
                         <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
@@ -273,7 +273,7 @@
         <section id="contact" class="contact">
             <h2>Get in Touch</h2>
             <p>If you have questions or need advice on your next build, our team is here to help.</p>
-            <form class="contact-form">
+            <form class="contact-form" method="POST" action="/api/contact">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -312,5 +312,25 @@
             <p class="attribution">Designed with passion by Immortal Tech.</p>
         </div>
     </footer>
+
+    <!-- Filter script -->
+    <script>
+        // Filtering functionality for prebuilt systems
+        const filterSelect = document.getElementById('filter-select');
+        const productCards = document.querySelectorAll('.product-card');
+        if (filterSelect) {
+            filterSelect.addEventListener('change', (e) => {
+                const value = e.target.value;
+                productCards.forEach((card) => {
+                    const category = card.getAttribute('data-category');
+                    if (value === 'all' || category === value) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        }
+    </script>
 </body>
 </html>

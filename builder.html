@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Build Your Dream PC - Immortal Tech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">Immortal<span>Tech</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="custom-builder" class="builder-page">
+      <h1>Build Your Dream PC</h1>
+      <form id="builder-form">
+        <label for="cpu">CPU:</label>
+        <select id="cpu" name="cpu">
+          <option value="5600X">AMD Ryzen 5 5600X</option>
+          <option value="7600X">AMD Ryzen 5 7600X</option>
+          <option value="13700K">Intel Core i7-13700K</option>
+          <option value="14700K">Intel Core i7-14700K</option>
+        </select>
+
+        <label for="gpu">GPU:</label>
+        <select id="gpu" name="gpu">
+          <option value="3060">NVIDIA RTX 3060</option>
+          <option value="4070">NVIDIA RTX 4070</option>
+          <option value="4070ti">NVIDIA RTX 4070 Ti</option>
+          <option value="4080">NVIDIA RTX 4080</option>
+          <option value="4090">NVIDIA RTX 4090</option>
+        </select>
+
+        <label for="memory">Memory:</label>
+        <select id="memory" name="memory">
+          <option value="16">16 GB DDR5</option>
+          <option value="32">32 GB DDR5</option>
+          <option value="64">64 GB DDR5</option>
+        </select>
+
+        <label for="storage">Storage:</label>
+        <select id="storage" name="storage">
+          <option value="1">1 TB NVMe SSD</option>
+          <option value="2">2 TB NVMe SSD</option>
+          <option value="4">4 TB PCIe 4.0 SSD</option>
+        </select>
+
+        <div id="price-display">Estimated Price: $0</div>
+
+        <button type="button" class="btn primary" onclick="calculatePrice()">Calculate Price</button>
+      </form>
+    </section>
+  </main>
+  <script>
+    function calculatePrice() {
+      const cpuPrices = { '5600X': 200, '7600X': 300, '13700K': 400, '14700K': 450 };
+      const gpuPrices = { '3060': 300, '4070': 600, '4070ti': 700, '4080': 900, '4090': 1600 };
+      const memoryPrices = { '16': 80, '32': 150, '64': 300 };
+      const storagePrices = { '1': 100, '2': 180, '4': 320 };
+
+      const cpu = document.getElementById('cpu').value;
+      const gpu = document.getElementById('gpu').value;
+      const memory = document.getElementById('memory').value;
+      const storage = document.getElementById('storage').value;
+
+      const total = cpuPrices[cpu] + gpuPrices[gpu] + memoryPrices[memory] + storagePrices[storage];
+
+      document.getElementById('price-display').innerText = 'Estimated Price: $' + total;
+    }
+  </script>
+</body>
+</html>

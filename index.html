@@ -1,434 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Immortal Gaming PCs</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Immortal Gaming PCs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="relic-styles.css" />
 </head>
 <body>
-    <!-- Navigation and Hero -->
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="#home" class="logo">Immortal<span>Tech<span>Gaming<span>Pcs</span></a>
-                <ul
-                    class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#deals">Deals</a></li>
-                    <li><a href="#products">Product
-                        s</a></li>
-                    
-             
-                    <!-- Updated link to builder page -->
-                    <li><a href="builder.html">Build</a></li>
-                    <li><a href="#features">Features</a></li>
-                  
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section id="home" class="hero">
-            <div class="hero-inner">
-                <h1>Immortal Tech Gaming PCs</h1>
-                <p class="tagline/p>
-                <div class="hero-actions">
-                    <a href="#products" class="btn primary">Shop Prebuilt</a>
-                    <!-- Updated hero button to link to builder page -->
-                    <a href="builder.html" class="btn secondary">Build Your Own</a>
-                </div>
-            </div>
-        </section>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Deals Section -->
-        <section id="deals" class="deals">
-            <h2>Hot Deals &amp; Offers</h2>
-            <div class="deal-grid">
-                <div class="deal-card">
-                    <!-- Icon -->
-                    <div class="deal-icon">
-                        <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
-                            <path d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.7-9.2 35.4S52.3 304 64 304h144l0 144c0 12.5 7.9 23.6 19.8 27.8s25-1.4 32.2-11.8l224-320c7.6-10.9 9.5-25 5-37.4s-15.3-21.7-28.6-24.5l-111.1-24z"/>
-                        </svg>
-                    </div>
-                    <h3>Save $200 on 1080p Builds</h3>
-                    <p class="deal-text">Use code <strong>POWER200</strong> at checkout and crush your favourite games without breaking the bank.</p>
-                    <a href="#products" class="btn tertiary">Shop Now</a>
-                </div>
-                <div class="deal-card">
-                    <div class="deal-icon">
-                        <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
-                            <path d="M112 0C85.5 0 64 21.5 64 48l0 48L16 96c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 208 0 0 32H96c-17.7 0-32 14.3-32 32l0 112c0 17.7 14.3 32 32 32h16c8.8 0 16 7.2 16 16s-7.2 16-16 16H88c-22.1 0-40-17.9-40-40L48 240l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l32 0 0-32c0-35.3 28.7-64 64-64h8l0-48C96 21.5 117.5 0 144 0h256c17.7 0 32 14.3 32 32c0 17.7-14.3 32-32 32l-256 0 0 64c0 0 224 0 224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0 0 128c0 8.8 7.2 16 16 16h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H128c-17.7 0-32-14.3-32-32L96 176H80c-17.7 0-32-14.3-32-32l0-112C48 21.5 69.5 0 96 0h16z"/>
-                        </svg>
-                    </div>
-                    <h3>Free Shipping over $999</h3>
-                    <p class="deal-text">Enjoy fast &amp; free delivery on any order above <strong>$999</strong>. Get your rig delivered right to your door.</p>
-                    <a href="#products" class="btn tertiary">Learn More</a>
-                </div>
-                <div class="deal-card">
-                    <div class="deal-icon">
-                        <svg viewBox="0 0 576 512" aria-hidden="true" focusable="false">
-                            <path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 285.9-186.1 365.8c-26.7 15.1-59.5 15.1-86.2 0C78.9 425.9 38.1 239.2 37.6 140c0-26.2 16.4-47.9 38.3-57.2L242.6 2.9C246.8 1 251.4 0 256 0z"/>
-                        </svg>
-                    </div>
-                    <h3>Bundle &amp; Save</h3>
-                    <p class="deal-text">Add a keyboard &amp; mouse bundle to your rig and get <strong>10&nbsp;% off</strong> accessories at checkout.</p>
-                    <a href="#products" class="btn tertiary">See Bundles</a>
-                </div>
-            </div>
-        </section>
-
-       <!-- Prebuilt Systems (Vault-ready cards) -->
-<section id="prebuilt" class="prebuilt">
-  <div class="prebuilt-header">
-    <h2>Build Your Dream Gaming PC</h2>
-    <p>Powerful, reliable, and ready to dominate</p>
-  </div>
-
-  <div class="prebuilt-grid">
-    <!-- Card 1 -->
-    <article class="pc-card">
-      <div class="pc-card-top">
-        <span class="tier-badge">Mid Range</span>
-        <span class="ship-line">
-          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 7h11v7h2l3 3v-3h2V7H3zm2 10a2 2 0 1 0 0 4a2 2 0 0 0 0-4m10 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4"/></svg>
-          Ships by 08/14
-        </span>
+  <!-- Navigation and Hero -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          Immortal<span>Tech</span><span>Gaming</span><span>Pcs</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#prebuilt">Products</a></li>
+          <li><a href="builder.html">Build</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+    </nav>
 
-      <div class="pc-hero">
-        <img src="img/pc1.jpg" alt="Immortal Slayer prebuilt PC" />
-      </div>
-
-      <h3 class="pc-title">Immortal Slayer</h3>
-
-      <div class="price-wrap">
-        <div class="price">$1,199</div>
-        <div class="price-sub">Starting at $73/mo</div>
-        <div class="stars" aria-label="Rated 5 out of 5">
-          <span>★★★★★</span>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <h1>Immortal Tech Gaming PCs</h1>
+        <p class="tagline">Powerful, reliable, and ready to dominate.</p>
+        <div class="hero-actions">
+          <a href="#prebuilt" class="btn primary">Shop Prebuilt</a>
+          <a href="builder.html" class="btn secondary">Build Your Own</a>
         </div>
       </div>
+    </section>
+  </header>
 
-      <dl class="specs">
-        <div><dt>CPU</dt><dd>Intel Core i5 / AMD Ryzen 7</dd></div>
-        <div><dt>GPU</dt><dd>RTX 3060 / 3670</dd></div>
-        <div><dt>RAM</dt><dd>16GB</dd></div>
-        <div><dt>OS Drive</dt><dd>1TB SSD</dd></div>
-      </dl>
-
-      <div class="pc-actions">
-        <a href="#addons" class="btn ghost">Add Ons</a>
-        <a href="#cart" class="btn primary">Add to Cart</a>
-      </div>
-    </article>
-
-    <!-- Card 2 -->
-    <article class="pc-card">
-      <div class="pc-card-top">
-        <span class="tier-badge">Mid Range</span>
-        <span class="ship-line">
-          <svg width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M3 7h11v7h2l3 3v-3h2V7H3zm2 10a2 2 0 1 0 0 4a2 2 0 0 0 0-4m10 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4"/></svg>
-          Ships by 5–7&nbsp;days
-        </span>
-      </div>
-
-      <div class="pc-hero">
-        <img src="img/pc2.jpg" alt="Eternal Legend prebuilt PC" />
-      </div>
-
-      <h3 class="pc-title">Eternal Legend</h3>
-
-      <div class="price-wrap">
-        <div class="price">$1,199</div>
-        <div class="price-sub">Starting at $73/mo</div>
-        <div class="stars" aria-label="Rated 5 out of 5"><span>★★★★★</span></div>
-      </div>
-
-      <dl class="specs">
-        <div><dt>CPU</dt><dd>16GB</dd></div>
-        <div><dt>RAM</dt><dd>1TB SSD</dd></div>
-        <div><dt>OS Drive</dt><dd>Windows 11</dd></div>
-        <div><dt>Storage</dt><dd>1TB SSD</dd></div>
-      </dl>
-
-      <div class="pc-actions">
-        <a href="#addons" class="btn ghost">Add Ons</a>
-        <a href="#cart" class="btn primary">Add to Cart</a>
-      </div>
-    </article>
-
-    <!-- Card 3 -->
-    <article class="pc-card">
-      <div class="pc-card-top">
-        <span class="tier-badge">Mid Range</span>
-        <span class="ship-line">
-          <svg width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M3 7h11v7h2l3 3v-3h2V7H3zm2 10a2 2 0 1 0 0 4a2 2 0 0 0 0-4m10 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4"/></svg>
-          Ships by 9–11&nbsp;days
-        </span>
-      </div>
-
-      <div class="pc-hero">
-        <img src="img/pc3.jpg" alt="Quantum Surge prebuilt PC" />
-      </div>
-
-      <h3 class="pc-title">Quantum Surge</h3>
-
-      <div class="price-wrap">
-        <div class="price">$1,199</div>
-        <div class="price-sub">Starting at $73/mo</div>
-        <div class="stars" aria-label="Rated 5 out of 5"><span>★★★★★</span></div>
-      </div>
-
-      <dl class="specs">
-        <div><dt>CPU</dt><dd>Intel / AMD</dd></div>
-        <div><dt>RAM</dt><dd>16GB</dd></div>
-        <div><dt>OS Drive</dt><dd>Windows 11</dd></div>
-        <div><dt>Storage</dt><dd>1TB SSD</dd></div>
-      </dl>
-
-      <div class="pc-actions">
-        <a href="#addons" class="btn ghost">Add Ons</a>
-        <a href="#cart" class="btn primary">Add to Cart</a>
-      </div>
-    </article>
-  </div>
-
-  <div class="why-choose">
-    <div class="why-item"><span class="why-ico">🚚</span> Free Shipping</div>
-    <div class="why-item"><span class="why-ico">💳</span> Financing Available</div>
-    <div class="why-item"><span class="why-ico">🇺🇸</span> Assembled in the USA</div>
-  </div>
-</section>
-
-
-        <!-- Products Section -->
-        <section id="products" class="products">
-            <h2>Prebuilt Systems</h2>
-            <!-- Filter controls -->
-            <div class="filter-controls">
-                <label for="filter-select">Filter by resolution:</label>
-                <select id="filter-select" name="filter-select" class="filter-select">
-                    <option value="all">All</option>
-                    <option value="1080p">1080p</option>
-                    <option value="1440p">1440p</option>
-                    <option value="4k">4K</option>
-                </select>
-            </div>
-            <div class="product-grid">
-                <div class="product-card" data-category="1080p">
-                    <img src="img/pc1.jpg" alt="Immortal Fury gaming PC" class="product-image">
-                    <h3>Immortal Fury</h3>
-                    <p class="description">
-                        Crafted for esports dominance at 1080p. Hand‑selected components ensure stability and blazing speed for your favourite titles.
-                    </p>
-                    <ul class="specs">
-                        <li>CPU: AMD&nbsp;Ryzen&nbsp;5&nbsp;7600X</li>
-                        <li>GPU: NVIDIA&nbsp;GeForce&nbsp;RTX&nbsp;4060</li>
-                        <li>Memory: 16 GB&nbsp;DDR5</li>
-                        <li>Storage: 1 TB&nbsp;NVMe&nbsp;SSD</li>
-                    </ul>
-                    <div class="price">$1,299</div>
-                    <a href="fury.html" class="btn secondary">Buy Now</a>
-                </div>
-                <div class="product-card" data-category="1440p">
-                    <img src="img/pc3.jpg" alt="Immortal Apex gaming PC" class="product-image">
-                    <h3>Immortal Apex</h3>
-                    <p class="description">
-                        1440p powerhouse with cutting‑edge components. Designed for high frame rates and smooth multitasking across creative workloads.
-                    </p>
-                    <ul class="specs">
-                        <li>CPU: Intel&nbsp;Core&nbsp;i7‑14700K</li>
-                        <li>GPU: NVIDIA&nbsp;GeForce&nbsp;RTX&nbsp;4070&nbsp;Super</li>
-                        <li>Memory: 32 GB&nbsp;DDR5</li>
-                        <li>Storage: 2 TB&nbsp;PCIe&nbsp;4.0&nbsp;SSD</li>
-                    </ul>
-                    <div class="price">$1,799</div>
-                    <a href="apex.html" class="btn secondary">Buy Now</a>
-                </div>
-                <div class="product-card" data-category="4k">
-                    <img src="img/pc2.jpg" alt="Immortal Quantum gaming PC" class="product-image">
-                    <h3>Immortal Quantum</h3>
-                    <p class="description">
-                        Ultimate 4K gaming rig. Experience unmatched visuals and lightning fast performance with the latest hardware.
-                    </p>
-                    <ul class="specs">
-                        <li>CPU: AMD&nbsp;Ryzen&nbsp;9&nbsp;7950X3D</li>
-                        <li>GPU: NVIDIA&nbsp;GeForce&nbsp;RTX&nbsp;4090</li>
-                        <li>Memory: 64 GB&nbsp;DDR5</li>
-                        <li>Storage: 4 TB&nbsp;PCIe&nbsp;4.0&nbsp;SSD</li>
-                    </ul>
-                    <div class="price">$3,499</div>
-                    <a href="quantum.html" class="btn secondary">Buy Now</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Custom Builder Section -->
-        <section id="builder" class="builder">
-            <div class="builder-content">
-                <div class="builder-text">
-                    <h2>Build Your Dream PC</h2>
-                    <p>Create a bespoke gaming machine that matches your play style. Choose your CPU, GPU, memory and storage—and let our experts assemble it to perfection.</p>
-                    <a href="builder.html" class="btn primary">Start Building</a>
-                </div>
-                <div class="builder-icon">
-                    <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
-                        <path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/>
-                    </svg>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section id="features" class="features-section">
-            <h2>Why Choose Immortal</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 384 512" aria-hidden="true" focusable="false">
-                            <path d="M195.7 18C200.9 7 212.1 0 224.4 0s23.4 7 28.8 18L317 150.3 360.6 171.5c12 1.8 22.7 9.1 27.6 20.1s3.6 23.8-3 33.8L306.9 313l23.8 139.4c2.1 12.3-3 24.7-13.2 32.3s-23.5 8.6-35.2 3.4L192 424l-90.3 64.1c-11.7 5.2-25 4-35.2-3.4s-15.4-20-13.2-32.3L76 313 8.8 225.4c-6.6-10-7.8-22.9-3-33.8s15.6-18.3 27.6-20.1L67 150.3 120 18c5.4-11 16.6-18 28.8-18s23.4 7 28.8 18L195.7 18z"/>
-                        </svg>
-                    </div>
-                    <h3>Premium Components</h3>
-                    <p>Only the best hardware from trusted brands — ensuring your rig is built to last.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
-                            <path d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.7-9.2 35.4S52.3 304 64 304h144l0 144c0 12.5 7.9 23.6 19.8 27.8s25-1.4 32.2-11.8l224-320c7.6-10.9 9.5-25 5-37.4s-15.3-21.7-28.6-24.5l-111.1-24z"/>
-                        </svg>
-                    </div>
-                    <h3>Lightning Performance</h3>
-                    <p>Our systems are tuned for speed, guaranteeing smooth frame rates and quick response times.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
-                            <path d="M112 0C85.5 0 64 21.5 64 48l0 48L16 96c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 208 0 0 32H96c-17.7 0-32 14.3-32 32l0 112c0 17.7 14.3 32 32 32h16c8.8 0 16 7.2 16 16s-7.2 16-16 16H88c-22.1 0-40-17.9-40-40L48 240l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l32 0 0-32c0-35.3 28.7-64 64-64h8l0-48C96 21.5 117.5 0 144 0h256c17.7 0 32 14.3 32 32c0 17.7-14.3 32-32 32l-256 0 0 64c0 0 224 0 224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0 0 128c0 8.8 7.2 16 16 16h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H128c-17.7 0-32-14.3-32-32L96 176H80c-17.7 0-32-14.3-32-32l0-112C48 21.5 69.5 0 96 0h16z"/>
-                        </svg>
-                    </div>
-                    <h3>Free Shipping</h3>
-                    <p>We cover shipping on all rigs over $999. Get your PC delivered quickly &amp; securely.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 640 512" aria-hidden="true" focusable="false">
-                            <path d="M256 48C141.1 48 48 141.1 48 256l0 40c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-40C0 114.6 114.6 0 256 0s256 114.6 256 256v40c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-40C464 141.1 370.9 48 256 48zM256 96A160 160 0 1 0 256 416 160 160 0 1 0 256 96zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zm-88 96c13.3 0 24 10.7 24 24s-10.7 24-24 24s-24-10.7-24-24 10.7-24 24-24zm176 0c13.3 0 24 10.7 24 24s-10.7 24-24 24s-24-10.7-24-24 10.7-24 24-24z"/>
-                        </svg>
-                    </div>
-                    <h3>Lifetime Support</h3>
-                    <p>Our experts are here to help you any time, with free diagnostics and troubleshooting.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reviews Section -->
-        <section id="reviews" class="reviews">
-            <h2>What Our Customers Say</h2>
-            <div class="review-grid">
-                <div class="review-card">
-                    <div class="stars">
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                    </div>
-                    <p class="review-text">“My Fury build arrived faster than expected and performs like a dream! Couldn’t be happier with the quality and service.”</p>
-                    <div class="review-author">— Alex R.</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                    </div>
-                    <p class="review-text">“I built my Apex with their custom builder and the process was seamless. The PC exceeded my expectations.”</p>
-                    <div class="review-author">— Jamie L.</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                        <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
-                    </div>
-                    <p class="review-text">“The build quality and attention to detail blew me away. Customer support was responsive and helpful.”</p>
-                    <div class="review-author">— Sam K.</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2>Get in Touch</h2>
-            <p>If you have questions or need advice on your next build, our team is here to help.</p>
-            <form class="contact-form" method="POST" action="/api/contact">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream build" required></textarea>
-                </div>
-                <button type="submit" class="btn secondary">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="social-links">
-                <a href="#" aria-label="Facebook">
-                    <svg viewBox="0 0 320 512" aria-hidden="true"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
-                </a>
-                <a href="#" aria-label="Instagram">
-                    <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                </a>
-                <a href="#" aria-label="X (Twitter)">
-                    <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-                </a>
-                <a href="#" aria-label="Twitch">
-                    <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z"/></svg>
-                </a>
-            </div>
-            <p>&copy; 2025 Immortal Tech. All rights reserved.</p>
-            <p class="attribution">Designed with passion by Immortal Tech.</p>
+  <!-- Main Content -->
+  <main>
+    <!-- Deals Section -->
+    <section id="deals" class="deals">
+      <h2>Hot Deals &amp; Offers</h2>
+      <div class="deal-grid">
+        <div class="deal-card">
+          <div class="deal-icon">
+            <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+              <path d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.7-9.2 35.4S52.3 304 64 304h144l0 144c0 12.5 7.9 23.6 19.8 27.8s25-1.4 32.2-11.8l224-320c7.6-10.9 9.5-25 5-37.4s-15.3-21.7-28.6-24.5l-111.1-24z"/>
+            </svg>
+          </div>
+          <h3>Save $200 on 1080p Builds</h3>
+          <p class="deal-text">Use code <strong>POWER200</strong> at checkout and crush your favourite games without breaking the bank.</p>
+          <a href="#prebuilt" class="btn tertiary">Shop Now</a>
         </div>
-    </footer>
 
-    <!- Filter script ->
-    <script>
-        // Filtering functionality for prebuilt systems
-        const filterSelect = document.getElementById('filter-select');
-        const productCards = document.querySelectorAll('.product-card');
-        if (filterSelect) {
-            filterSelect.addEventListener('change', (e) => {
-                const value = e.target.value;
-                productCards.forEach((card) => {
-                    const category = card.getAttribute('data-category');
-                    if (value === 'all' || category === value) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        }
-    </script>
+        <div class="deal-card">
+          <div class="deal-icon">
+            <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+              <path d="M112 0C85.5 0 64 21.5 64 48l0 48L16 96c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 208 0 0 32H96c-17.7 0-32 14.3-32 32l0 112c0 17.7 14.3 32 32 32h16c8.8 0 16 7.2 16 16s-7.2 16-16 16H88c-22.1 0-40-17.9-40-40L48 240l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l32 0 0-32c0-35.3 28.7-64 64-64h8l0-48C96 21.5 117.5 0 144 0h256c17.7 0 32 14.3 32 32c0 17.7-14.3 32-32 32l-256 0 0 64c0 0 224 0 224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0 0 128c0 8.8 7.2 16 16 16h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H128c-17.7 0-32-14.3-32-32L96 176H80c-17.7 0-32-14.3-32-32l0-112C48 21.5 69.5 0 96 0h16z"/>
+            </svg>
+          </div>
+          <h3>Free Shipping over $999</h3>
+          <p class="deal-text">Enjoy fast &amp; free delivery on any order above <strong>$999</strong>. Get your rig delivered right to your door.</p>
+          <a href="#prebuilt" class="btn tertiary">Learn More</a>
+        </div>
+
+        <div class="deal-card">
+          <div class="deal-icon">
+            <svg viewBox="0 0 576 512" aria-hidden="true" focusable="false">
+              <path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 285.9-186.1 365.8c-26.7 15.1-59.5 15.1-86.2 0C78.9 425.9 38.1 239.2 37.6 140c0-26.2 16.4-47.9 38.3-57.2L242.6 2.9C246.8 1 251.4 0 256 0z"/>
+            </svg>
+          </div>
+          <h3>Bundle &amp; Save</h3>
+          <p class="deal-text">Add a keyboard &amp; mouse bundle to your rig and get <strong>10&nbsp;% off</strong> accessories at checkout.</p>
+          <a href="#prebuilt" class="btn tertiary">See Bundles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prebuilt Systems (purple cards) -->
+    <section id="prebuilt" class="prebuilt">
+      <div class="prebuilt-header">
+        <h2>Build Your Dream Gaming PC</h2>
+        <p>Powerful, reliable, and ready to dominate</p>
+      </div>
+
+      <div class="prebuilt-grid">
+        <!-- Card 1 -->
+        <article class="pc-card">
+          <div class="pc-card-top">
+            <span class="tier-badge">Mid Range</span>
+            <span class="ship-line">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M3 7h11v7h2l3 3v-3h2V7H3zm2 10a2 2 0 1 0 0 4a2 2 0 0 0 0-4m10 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4"/>
+              </svg>
+              Ships by 08/14
+            </span>
+          </div>
+
+          <div class="pc-hero">
+            <img src="img/pc1.jpg" alt="Immortal Slayer prebuilt PC" />
+          </div>
+
+          <h3 class="pc-title">Immortal Slayer</h3>
+
+          <div class="price-wrap">
+            <div class="price">$1,199</div>
+            <div class="price-sub">Starting at $73/mo</div>
+            <div class="stars" aria-label="Rated 5 out of 5"><span>★★★★★</span></div>
+          </div>
+
+          <dl class="specs">
+            <div><dt>CPU</dt><dd>Intel Core i5 / AMD Ryzen 7</dd></div>
+            <div><dt>GPU</dt><dd>RTX 3060 / 3670</dd></div>
+            <div><dt>RAM</dt><dd>16GB</dd></div>
+            <div><dt>OS Drive</dt><dd>1TB SSD</dd></div>
+          </dl>
+
+          <div class="pc-actions">
+            <a href="#addons" class="btn ghost">Add Ons</a>
+            <a href="#cart" class="btn primary">Add to Cart</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="pc-card">
+          <div class="pc-card-top">
+            <span class="tier-badge">Mid Range</span>
+            <span class="ship-line">
+              <svg width="18" height="18" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M3 7h11v7h2l3 3v-3h2V7H3zm2 10a2 2 0 1 0 0 4a2 2 0 0 0 0-4m10 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4"/>
+              </svg>
+              Ships by 5–7&nbsp;days
+            </span>
+          </div>
+
+          <div class="pc-hero">
+            <img src="img/pc2.jpg" alt="Eternal Legend prebuilt PC" />
+          </div>
+
+          <h3 class="pc-title">Eternal Legend</h3>
+
+          <div class="price-wrap">
+            <div class="price">$1,199</div>
+            <div class="price-sub">Starting at $73/mo</div>
+            <div class="stars" aria-label="Rated 5 out of 5"><span>★★★★★</span></div>
+          </div>
+
+          <dl class="specs">
+            <div><dt>CPU</dt><dd>Intel Core i7 / Ryzen 7</dd></div>
+            <div><dt>GPU</dt><dd>RTX 4070</dd></div>
+            <div><dt>RAM</dt><dd>16GB</dd></div>
+            <div><dt>OS Drive</dt><dd>1TB SSD</dd></div>
+          </dl>
+
+          <div class="pc-actions">
+            <a href="#addons" class="btn ghost">Add Ons</a>
+            <a href="#cart" class="btn primary">Add to Cart</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="pc-card">
+          <div class="pc-card-top">
+            <span class="tier-badge">Mid Range</span>
+            <span class="ship-line">
+              <svg width="18" height="18" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M3 7h11v7h2l3 3v-3h2V7H3zm2 10a2 2 0 1 0 0 4a2 2 0 0 0 0-4m10 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4"/>
+              </svg>
+              Ships by 9–11&nbsp;days
+            </span>
+          </div>
+
+          <div class="pc-hero">
+            <img src="img/pc3.jpg" alt="Quantum Surge prebuilt PC" />
+          </div>
+
+          <h3 class="pc-title">Quantum Surge</h3>
+
+          <div class="price-wrap">
+            <div class="price">$1,199</div>
+            <div class="price-sub">Starting at $73/mo</div>
+            <div class="stars" aria-label="Rated 5 out of 5"><span>★★★★★</span></div>
+          </div>
+
+          <dl class="specs">
+            <div><dt>CPU</dt><dd>Intel / AMD</dd></div>
+            <div><dt>RAM</dt><dd>16GB</dd></div>
+            <div><dt>OS Drive</dt><dd>Windows 11</dd></div>
+            <div><dt>Storage</dt><dd>1TB SSD</dd></div>
+          </dl>
+
+          <div class="pc-actions">
+            <a href="#addons" class="btn ghost">Add Ons</a>
+            <a href="#cart" class="btn primary">Add to Cart</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="why-choose">
+        <div class="why-item"><span class="why-ico">🚚</span> Free Shipping</div>
+        <div class="why-item"><span class="why-ico">💳</span> Financing Available</div>
+        <div class="why-item"><span class="why-ico">🇺🇸</span> Assembled in the USA</div>
+      </div>
+    </section>
+
+    <!-- Custom Builder Section -->
+    <section id="builder" class="builder">
+      <div class="builder-content">
+        <div class="builder-text">
+          <h2>Build Your Dream PC</h2>
+          <p>Create a bespoke gaming machine that matches your play style. Choose your CPU, GPU, memory and storage—and let our experts assemble it to perfection.</p>
+          <a href="builder.html" class="btn primary">Start Building</a>
+        </div>
+        <div class="builder-icon">
+          <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+            <path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <h2>Why Choose Immortal</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 384 512" aria-hidden="true" focusable="false">
+              <path d="M195.7 18C200.9 7 212.1 0 224.4 0s23.4 7 28.8 18L317 150.3 360.6 171.5c12 1.8 22.7 9.1 27.6 20.1s3.6 23.8-3 33.8L306.9 313l23.8 139.4c2.1 12.3-3 24.7-13.2 32.3s-23.5 8.6-35.2 3.4L192 424l-90.3 64.1c-11.7 5.2-25 4-35.2-3.4s-15.4-20-13.2-32.3L76 313 8.8 225.4c-6.6-10-7.8-22.9-3-33.8s15.6-18.3 27.6-20.1L67 150.3 120 18c5.4-11 16.6-18 28.8-18s23.4 7 28.8 18L195.7 18z"/>
+            </svg>
+          </div>
+          <h3>Premium Components</h3>
+          <p>Only the best hardware from trusted brands — ensuring your rig is built to last.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+              <path d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.7-9.2 35.4S52.3 304 64 304h144l0 144c0 12.5 7.9 23.6 19.8 27.8s25-1.4 32.2-11.8l224-320c7.6-10.9 9.5-25 5-37.4s-15.3-21.7-28.6-24.5l-111.1-24z"/>
+            </svg>
+          </div>
+          <h3>Lightning Performance</h3>
+          <p>Our systems are tuned for speed, guaranteeing smooth frame rates and quick response times.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+              <path d="M112 0C85.5 0 64 21.5 64 48l0 48L16 96c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 208 0 0 32H96c-17.7 0-32 14.3-32 32l0 112c0 17.7 14.3 32 32 32h16c8.8 0 16 7.2 16 16s-7.2 16-16 16H88c-22.1 0-40-17.9-40-40L48 240l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l32 0 0-32c0-35.3 28.7-64 64-64h8l0-48C96 21.5 117.5 0 144 0h256c17.7 0 32 14.3 32 32c0 17.7-14.3 32-32 32l-256 0 0 64c0 0 224 0 224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0 0 128c0 8.8 7.2 16 16 16h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H128c-17.7 0-32-14.3-32-32L96 176H80c-17.7 0-32-14.3-32-32l0-112C48 21.5 69.5 0 96 0h16z"/>
+            </svg>
+          </div>
+          <h3>Free Shipping</h3>
+          <p>We cover shipping on all rigs over $999. Get your PC delivered quickly &amp; securely.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 640 512" aria-hidden="true" focusable="false">
+              <path d="M256 48C141.1 48 48 141.1 48 256l0 40c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-40C0 114.6 114.6 0 256 0s256 114.6 256 256v40c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-40C464 141.1 370.9 48 256 48zM256 96A160 160 0 1 0 256 416 160 160 0 1 0 256 96zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zm-88 96c13.3 0 24 10.7 24 24s-10.7 24-24 24s-24-10.7-24-24 10.7-24 24-24zm176 0c13.3 0 24 10.7 24 24s-10.7 24-24 24s-24-10.7-24-24 10.7-24 24-24z"/>
+            </svg>
+          </div>
+          <h3>Lifetime Support</h3>
+          <p>Our experts are here to help you any time, with free diagnostics and troubleshooting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+      <h2>What Our Customers Say</h2>
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="stars">
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+          </div>
+          <p class="review-text">“My Fury build arrived faster than expected and performs like a dream! Couldn’t be happier with the quality and service.”</p>
+          <div class="review-author">— Alex R.</div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+          </div>
+          <p class="review-text">“I built my Apex with their custom builder and the process was seamless. The PC exceeded my expectations.”</p>
+          <div class="review-author">— Jamie L.</div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22.7 9.1-27.6 20.1s-3.6 23.8 3 33.8L109 313 85.2 452.4c-2.1 12.3 3 24.7 13.2 32.3s23.5 8.6 35.2 3.4L288 424l154.8 64.1c11.7 5.2 25 4 35.2-3.4s15.4-20 13.2-32.3L467 313 558.3 225.4c6.6-10 7.8-22.9 3-33.8s-15.6-18.3-27.6-20.1L381 150.3 329 18c-5.4-11-16.6-18-28.8-18s-23.4 7-28.8 18z"/></svg>
+          </div>
+          <p class="review-text">“The build quality and attention to detail blew me away. Customer support was responsive and helpful.”</p>
+          <div class="review-author">— Sam K.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Get in Touch</h2>
+      <p>If you have questions or need advice on your next build, our team is here to help.</p>
+      <form class="contact-form" method="POST" action="/api/contact">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream build" required></textarea>
+        </div>
+        <button type="submit" class="btn secondary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 320 512" aria-hidden="true"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+        </a>
+        <a href="#" aria-label="X (Twitter)">
+          <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitch">
+          <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z"/></svg>
+        </a>
+      </div>
+      <p>&copy; 2025 Immortal Tech. All rights reserved.</p>
+      <p class="attribution">Designed with passion by Immortal Tech.</p>
+    </div>
+  </footer>
 </body>
 </html>
